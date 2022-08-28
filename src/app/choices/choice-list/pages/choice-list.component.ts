@@ -30,7 +30,13 @@ export class ChoiceListComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
 
-    this.getDesignationLocation()
+    //this.getDesignationLocation()  for api
+
+
+    
+    (await this.getJSON()).subscribe(data=>{ //for local json file..
+      this.markers = data; 
+    })
 
   }
   openInfo(marker: Marker) {
