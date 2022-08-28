@@ -1,8 +1,12 @@
 # Tercihsepeti
 
 Google map use in angular project. 
+
 I'did map component. Map component used markerList. {title : "", label : "", position....}
 
+I used static class for basket. I selected mark sent basketList and I show selectedList on the map. 
+
+You can prefer native Json or api.request for data.
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
