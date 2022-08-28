@@ -1,0 +1,49 @@
+<br>
+<table class="table table-striped">
+  <thead class="table table-dark">
+    <tr>
+      <th scope="col">Sıra</th>
+      <th scope="col">Adı</th>
+      <th scope="col" colspan="4">-</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let item of markerservice?.GetMarkerList()">
+    <tr>
+      <th scope="row">{{ item.index + 1 }}</th>
+      <td>{{ item.title }}</td>
+      <td>{{ item.label }}</td>
+      <td>
+        <button
+          *ngIf="item.index != 0"
+          type="button"
+          class="btn btn-outline-primary"
+          (click)="MarkerUp(item)"
+        >
+          Yukarı(↑)
+        </button>
+      </td>
+      <td>
+        <button
+          *ngIf="
+            markerservice?.GetMarkerLastIndex() &&
+            item.index != markerservice?.GetMarkerLastIndex()
+          "
+          type="button"
+          class="btn btn-outline-success"
+          (click)="MarkerDown(item)"
+        >
+          Aşağı(↓)
+        </button>
+      </td>
+      <td>
+        <button
+          type="button"
+          class="btn btn-outline-danger"
+          (click)="removeMarker(item)"
+        >
+          Sil(X)
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

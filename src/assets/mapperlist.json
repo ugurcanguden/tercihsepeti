@@ -1,0 +1,134 @@
+[
+  {
+    "label" : "Mediha Tansel Ortaokulu",
+    "title" : "Mediha Tansel Ortaokulu",
+	"position" : {
+      "lat" : 41.0183234,
+      "lng" : 29.1385495
+    }
+  },
+   {
+    "label" : "Ahmet Yavuz ortaokulu",
+    "title" : "Ahmet Yavuz ortaokulu",
+	"position" : {
+      "lat" : 41.0409129,
+      "lng" : 29.1067777
+    }
+  },
+   {
+    "label" : "Hacı Mehmet Özdemir imamhatiportaokulu",
+    "title" : "Hacı Mehmet Özdemir imamhatiportaokulu",
+	"position" : {
+      "lat" : 41.0586957,
+      "lng" : 28.9893160
+    }
+  },
+   {
+    "label" : "Selahattin Eyyubi Hamza Saruhan Ortaokulu",
+    "title" : "Selahattin Eyyubi Hamza Saruhan Ortaokulu",
+	"position" : {
+      "lat" : 41.0722402,
+      "lng" : 29.0028314
+    }
+  },
+   {
+    "label" : "Ümraniye Yavuz Selim Ortaokulu",
+    "title" : "Ümraniye Yavuz Selim Ortaokulu",
+	"position" : {
+      "lat" : 41.0251412,
+      "lng" : 29.1535148
+    }
+  },
+   {
+    "label" : "Hoca İshak Efendi İmam Hatip Ortaokulu",
+    "title" : "Hoca İshak Efendi İmam Hatip Ortaokulu",
+	"position" : {
+      "lat" : 41.0457938,
+      "lng" : 28.9460577
+    }
+  },
+   {
+    "label" : "Oruçgazi Ortaokulu",
+    "title" : "Oruçgazi Ortaokulu",
+	"position" : {
+      "lat" : 41.0123668,
+      "lng" : 28.9527471
+    }
+  },
+   {
+    "label" : "TevfikKut Ortaokulu",
+    "title" : "TevfikKut Ortaokulu",
+	"position" : {
+      "lat" : 41.0060038,
+      "lng" : 28.9631021
+    }
+  },
+   {
+    "label" : "Piripaşa İlköğretim Okulu Ortaokul",
+    "title" : "Piripaşa İlköğretim Okulu Ortaokul",
+	"position" : {
+      "lat" : 41.0483458,
+      "lng" : 28.9589035
+    }
+  },
+   {
+    "label" : "Fatih Cibali Ortaokulu",
+    "title" : "Fatih Cibali Ortaokulu",
+	"position" : {
+      "lat" : 41.0249265,
+      "lng" : 28.9563520
+    }
+  }
+,
+   {
+    "label" : "Ali Nar Anadolu İmam Hatip Lisesi",
+    "title" : "Ali Nar Anadolu İmam Hatip Lisesi",
+	"position" : {
+      "lat" : 41.0163692,
+      "lng" : 28.9254654
+    }
+  }
+,
+   {
+    "label" : "Kazım Özalp ortaokulu",
+    "title" : "Kazım Özalp ortaokulu",
+	"position" : {
+      "lat" : 40.9853388,
+      "lng" : 28.8978993
+    }
+  }
+,
+   {
+    "label" : "ÇELİKTEPE ORTAOKULU",
+    "title" : "ÇELİKTEPE ORTAOKULU",
+	"position" : {
+      "lat" : 41.0851811,
+      "lng" : 28.9967451
+    }
+  }
+ ,
+   {
+    "label" : "Ayhan Şahenk Ortaokulu",
+    "title" : "Ayhan Şahenk Ortaokulu",
+	"position" : {
+      "lat" : 40.9973294,
+      "lng" : 28.9088632
+    }
+  } ,
+   {
+    "label" : "Mehmet Emin Pulatkonak İlkokulu - Ortaokulu",
+    "title" : "Mehmet Emin Pulatkonak İlkokulu - Ortaokulu",
+	"position" : {
+      "lat" : 41.0712385,
+      "lng" : 29.0780485
+    }
+  },
+   {
+    "label" : "60. Yıl Sarıgazi Ortaokulu",
+    "title" : "60. Yıl Sarıgazi Ortaokulu",
+	"position" : {
+      "lat" : 41.0050226,
+      "lng" : 29.2128024
+    }
+  }
+]

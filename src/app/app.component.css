@@ -1,0 +1,8 @@
+body {margin: 0}
+
+.navbar {
+  display: flex; /* displays flex-items (children) inline */
+  justify-content: space-between; /* children are evenly distributed, first child is on the left and last child on the right side */
+}
+
+ul {list-style: none}

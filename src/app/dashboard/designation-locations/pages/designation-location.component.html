@@ -1,0 +1,57 @@
+
+  <div class="row">
+    <div class="col-md-8 col-sm12">
+      <app-maps *ngIf="designationLocationList.length > 0"
+      [designationLocationList]="designationLocationList"
+      (clickMapMarker) ="openInfo($event)"
+      >
+      </app-maps>
+    </div>
+    <div class="col-md-4 col-sm12">
+      <form #f="ngForm" (ngSubmit)="f.form.valid &&designationLocationAdd()" novalidate>
+        <div class="form-group">
+          <label for="label">Adı</label>
+          <input name="label" type="text" required [(ngModel)]="label"  class="form-control" >
+        </div>
+        <br/>
+        <div class="form-group">
+          <label for="label">Başlık</label>
+          <input name="title" type="text" required [(ngModel)]="title"  class="form-control" >
+        </div>
+        <br/>
+
+        <div class="form-group">
+          <label for="lat">Yatay Koordinat(Map ilk koordinat)</label>
+          <input name="lat" type="number" required [(ngModel)]="lat"  class="form-control" >
+        </div>
+        <br/>
+
+        <div>
+          <label for="lng">Dikey Koordinat(Map ikinci koordinat)</label>
+          <input name="lng" type="number" required [(ngModel)]="lng"  class="form-control" >
+        </div>
+        <br/>
+        <div class="form-group"  >
+          <button  class="btn btn-primary" type="submit" [disabled] ="diabled">Ekle</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <ng-template #modalData let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Tercih Seçimi</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p><strong>{{this.selectedMarker?.title}}</strong></p>
+    </div>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-success" [disabled] ="diabled"
+    (click)="removeLocation()">
+      Lokasyonu Sil
+  </button>
+    </div>
+  </ng-template>

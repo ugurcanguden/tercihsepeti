@@ -1,0 +1,32 @@
+
+<div class="container">
+  <div class="p-3 mb-2 bg-gradient-info text-dark">Tercih Eklemek İçin İşaretlerin üzerine tıklayınız.</div>
+  <app-maps *ngIf="designationLocationList.length > 0"
+  [designationLocationList]="designationLocationList"
+  (clickMapMarker) ="openInfo($event)"
+  >
+  </app-maps>
+  <app-choice-table>
+
+  </app-choice-table>
+
+  <ng-template #modalData let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Tercih Seçimi</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p><strong>{{this.selectedMarker?.title}}</strong></p>
+    </div>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-success"
+    (click)="AddMarker()">
+      Tercih Sepetine Ekle
+  </button>
+    </div>
+  </ng-template>
+
+</div>
+

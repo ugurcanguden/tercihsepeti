@@ -1,0 +1,15 @@
+<form #f="ngForm" (ngSubmit)="f.form.valid &&login()" novalidate>
+  <div class="form-group">
+    <label for="label">Kullanci Adi</label>
+    <input name="label" type="text" required [(ngModel)]="username"  class="form-control" >
+  </div>
+  <br/>
+  <div class="form-group">
+    <label for="label">Şifre</label>
+    <input name="title" type="password" required [(ngModel)]="password"  class="form-control" >
+  </div>
+  <br/>
+  <div class="form-group"  >
+    <button  class="btn btn-primary" type="submit" >Giriş</button>
+  </div>
+</form>

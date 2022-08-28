@@ -1,0 +1,21 @@
+<br>
+<table class="table table-striped">
+  <thead class="table table-dark">
+    <tr>
+      <th scope="col">Tercih Adi</th>
+      <th scope="col">-</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let item of designation">
+    <tr>
+
+      <td>{{ item.designationName }}</td>
+      <td>
+        <a class="btn btn-sucess"
+        [routerLink]="['/designationLocation']"
+        [queryParams]="{ guid: this.guid?.toString(),id : item.id?.toString() }">Tercih yeri ekle</a>
+      </td>
+
+    </tr>
+  </tbody>
+</table>

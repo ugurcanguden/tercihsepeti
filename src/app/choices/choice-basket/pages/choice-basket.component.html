@@ -1,0 +1,12 @@
+<div class="container">
+<app-maps
+[markers]="markerService.GetMarkerList()"
+(clickMapMarker) ="openInfo($event)"
+>
+</app-maps>
+<app-choice-table>
+
+</app-choice-table>
+</div>
+
+
